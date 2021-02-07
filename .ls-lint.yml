@@ -1,0 +1,17 @@
+ls:
+  .js: camelCase | point.case
+  .ts: camelCase | point.case
+
+  # Enable when project use graphql generator type
+  src/graphql/types/*:
+    .ts: PascalCase
+
+ignore:
+  - node_modules
+  - dist
+  - .nuxt
+  - .husky
+  - .git
+  - .github
+  - .vscode
+  - .idea

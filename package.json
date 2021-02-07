@@ -1,0 +1,21 @@
+{
+  "name": "javascript-base-repo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TechMeLy/javascript-base-repo.git",
+  "author": "Harry Tran <nhattq.coding@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "node ./scripts/checkYarn.js",
+    "postinstall": "husky install .githooks",
+    "lint:files": "ls-lint"
+  },
+  "devDependencies": {
+    "@ls-lint/ls-lint": "^1.9.2",
+    "chalk": "^4.1.0",
+    "husky": "^5.0.6"
+  },
+  "engines": {
+    "node": ">=14.15.4"
+  }
+}
